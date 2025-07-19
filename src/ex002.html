@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <header>
+            <nav>
+                <a href="#">Inicio</a> 
+                <a href="#">Explorer</a>
+            </nav>
+        </header>
+        <meta charset="UTF-8">
+        <title>GIF Com Estilo</title>
+        <style>
+            body{
+                background: #1111;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+            .gif-chique {
+                border-radius: 25px;
+                border: 4px solid rgba(255,255,255,0.1);
+                box-shadow: 0 0 20px rgba (0. 255,255,0.5),
+                0 0 40px rgba(0, 255, 255, 0.3);
+                backdrop-filter: blur(10px);
+                transition: : transform 0.3s ease;
+            }
+            .gif-chique:hover {
+                transform: : scale(1.05);
+                box-shadow: 0 0 25px cyan, 0 0 50px cyan;
+            }
+        </style>
+    </head>
+    <body>
+        <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExN3V4M2ZtZ21wbm1saWtlYnBweDc4bTF2a28xY2x6azVmdGViaHJsMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26tn33aiTi1jkl6H6/giphy.gif" alt="Gif-estiloso" class="gif-chique">
+    </body>
+    <head>
+        <form action="/enviar" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="email" name="Email">
+            
+        </form>
+    </head>
+</html>
